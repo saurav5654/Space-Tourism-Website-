@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Space tourism website</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/favicon-32x32.png" alt="Logo">
+    </div>
+    <div class="nav-line"></div>
+    <div class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-panel">
+      <nav>
+        <a href="#" data-page="home" class="active">
+          <span aria-hidden="true">00</span> Home
+        </a>
+        <a href="#" data-page="destination">
+          <span aria-hidden="true">01</span> Destination
+        </a>
+        <a href="#" data-page="crew">
+          <span>02</span> Crew
+        </a>
+        <a href="#" data-page="technology">
+          <span>03</span> Technology
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME PAGE -->
+    <div id="home-page" class="page active">
+      <div class="container">
+        <div class="hero-left">
+          <p class="upper">So, you want to travel to</p>
+          <h1>Space</h1>
+          <p>Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind
+            of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!
+          </p>
+        </div>
+        <div class="hero-right">
+          <a href="#" class="explore-btn" data-page-target="destination">Explore</a>
+          <!-- Hero image placeholder -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- DESTINATION PAGE -->
+  
+    <div id="destination-page" class="page">
+      <h2 class="page-title"><span>01</span>Pick your destination</h2>
+      <div class="container">
+        <div class="destination-image">
+          <picture>
+            <!-- Default to Moon image, JavaScript will update this -->
+            <source srcset="./assets/destination/image-moon.webp" type="image/webp">
+            <img src="./assets/destination/image-moon.png" alt="Moon" class="dest-img">
+          </picture>
+        </div>
+        <div class="destination-info">
+          <div class="destination-tabs">
+            <button class="dest-tab active" data-destination="Moon">Moon</button>
+            <button class="dest-tab" data-destination="Mars">Mars</button>
+            <button class="dest-tab" data-destination="Europa">Europa</button>
+            <button class="dest-tab" data-destination="Titan">Titan</button>
+          </div>
+
+          <!-- Moon -->
+          <div class="tab-content active" data-destination-content="Moon">
+            <h2>Moon</h2>
+            <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+            <div class="destination-stats">
+              <div class="stat">
+                <div class="stat-label">Avg. distance</div>
+                <div class="stat-value">384,400 km</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Est. travel time</div>
+                <div class="stat-value">3 days</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mars -->
+          <div class="tab-content" data-destination-content="Mars">
+            <h2>Mars</h2>
+            <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+            <div class="destination-stats">
+              <div class="stat">
+                <div class="stat-label">Avg. distance</div>
+                <div class="stat-value">225 mil. km</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Est. travel time</div>
+                <div class="stat-value">9 months</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Europa -->
+          <div class="tab-content" data-destination-content="Europa">
+            <h2>Europa</h2>
+            <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover's dream. With an icy
+              surface, it's perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery
+              cabin.</p>
+            <div class="destination-stats">
+              <div class="stat">
+                <div class="stat-label">Avg. distance</div>
+                <div class="stat-value">628 mil. km</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Est. travel time</div>
+                <div class="stat-value">3 years</div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- TITAN -->
+          <div class="tab-content" data-destination-content="Titan">
+            <h2>Titan</h2>
+            <p>The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a
+              few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+            <div class="destination-stats">
+              <div class="stat">
+                <div class="stat-label">Avg. distance</div>
+                <div class="stat-value">1.6 bil. km</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Est. travel time</div>
+                <div class="stat-value">7 years</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CREW PAGE -->
+    <div id="crew-page" class="page">
+      <h2 class="page-title"><span>02</span>Meet your crew</h2>
+      <div class="container">
+        <div class="crew-image">
+          <picture>
+            <source srcset="./assets/crew/image-douglas-hurley.webp" type="image/webp">
+            <img src="./assets/crew/image-douglas-hurley.png" alt="Douglas Hurley" class="crew-img">
+          </picture>
+        </div>
+        <div class="crew-info">
+          <div class="crew-tab-content active">
+            <h3 class="crew-role">Commander</h3>
+            <h2>Douglas Hurley</h2>
+            <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He
+              launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+          </div>
+
+          <div class="crew-tab-content">
+            <h3 class="crew-role">Mission Specialist</h3>
+            <h2>Mark Shuttleworth</h2>
+            <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu
+              operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+          </div>
+
+          <div class="crew-tab-content">
+            <h3 class="crew-role">Pilot</h3>
+            <h2>Victor Glover</h2>
+            <p>Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station.
+              Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64,
+              and served as a station systems flight engineer.</p>
+          </div>
+
+          <div class="crew-tab-content">
+            <h3 class="crew-role">Flight Engineer</h3>
+            <h2>Anousheh Ansari</h2>
+            <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth
+              self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.
+            </p>
+          </div>
+
+          <div class="crew-tabs">
+            <button class="crew-dot active"></button>
+            <button class="crew-dot"></button>
+            <button class="crew-dot"></button>
+            <button class="crew-dot"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECHNOLOGY PAGE -->
+    <div id="technology-page" class="page">
+      <h2 class="page-title"><span>03</span>Space launch 101</h2>
+      <div class="container">
+        <div class="technology-info">
+          <div class="tech-tabs">
+            <button class="tech-btn active">1</button>
+            <button class="tech-btn">2</button>
+            <button class="tech-btn">3</button>
+          </div>
+
+          <div class="tech-details">
+            <div class="tech-tab-content active">
+              <p class="tech-label">The terminology...</p>
+              <h2>Launch vehicle</h2>
+              <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's
+                surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+                operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+            </div>
+
+            <div class="tech-tab-content">
+              <p class="tech-label">The terminology...</p>
+              <h2>Spaceport</h2>
+              <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport
+                for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated
+                to take advantage of the Earth's rotation for launch.</p>
+            </div>
+
+            <div class="tech-tab-content">
+              <p class="tech-label">The terminology...</p>
+              <h2>Space capsule</h2>
+              <p>A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the
+                Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It
+                includes a space gym, cinema, and plenty of other activities to keep you entertained.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-image">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./assets/technology/image-launch-vehicle-portrait.jpg"
+              type="image/jpeg">
+            <source media="(max-width: 1023px)" srcset="./assets/technology/image-launch-vehicle-landscape.jpg"
+              type="image/jpeg">
+            <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch vehicle" class="tech-img">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
